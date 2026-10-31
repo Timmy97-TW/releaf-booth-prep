@@ -187,26 +187,57 @@ body.drill .pi .s{display:block}
 @media (max-width:900px){.gcols{grid-template-columns:1fr}.cxi{grid-template-columns:1fr;gap:8px}}
 
 /* randomizer */
-.draw{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;align-items:start}
-.dstage{background:linear-gradient(145deg,var(--navy),#0C1C44);border-radius:var(--r);padding:34px 30px;color:#fff;text-align:center;position:relative;overflow:hidden;min-height:330px;display:flex;flex-direction:column;justify-content:center}
-.dstage:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:50%;top:-55%;transform:translateX(-50%);background:radial-gradient(circle,rgba(0,212,146,.3) 0%,transparent 65%);filter:blur(60px);pointer-events:none}
-.dstage .inner{position:relative;z-index:1}
-.dname{font-size:clamp(30px,5vw,46px);font-weight:700;letter-spacing:-.03em;line-height:1.1;min-height:1.1em;transition:opacity .1s}
-.dname.spin{opacity:.45}
-.drole{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--green2);margin-top:12px;min-height:1.2em}
-.dmulti{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:6px}
-.dmulti span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:10px 16px;font-size:19px;font-weight:600;letter-spacing:-.01em}
-.dbtns{display:flex;gap:10px;justify-content:center;margin-top:26px;flex-wrap:wrap}
-.dbtns button{font:inherit;font-size:15px;font-weight:600;border:0;border-radius:999px;padding:12px 26px;cursor:pointer;background:#fff;color:var(--navy)}
-.dbtns button.g{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
-.dbtns button:disabled{opacity:.4;cursor:not-allowed}
-.dmeta{font-size:12.5px;color:rgba(255,255,255,.5);margin-top:18px}
-.dpanel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
-.pool{margin-top:16px}
-.pool+.pool{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.draw{display:grid;gap:18px}
+.dstage{background:radial-gradient(130% 110% at 50% -10%,#15306B 0%,#071233 46%,var(--navy) 100%);
+  border-radius:30px;padding:60px 30px 48px;color:#fff;text-align:center;position:relative;overflow:hidden;
+  min-height:clamp(420px,52vh,520px);display:flex;flex-direction:column;justify-content:center;
+  box-shadow:0 30px 70px -30px rgba(0,30,80,.55)}
+.dstage:before,.dstage:after{content:"";position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.dstage:before{width:620px;height:620px;left:50%;top:-62%;transform:translateX(-50%);background:radial-gradient(circle,rgba(0,212,146,.38) 0%,transparent 64%)}
+.dstage:after{width:520px;height:520px;left:-14%;bottom:-48%;background:radial-gradient(circle,rgba(1,103,239,.42) 0%,transparent 66%)}
+.dstage .inner{position:relative;z-index:1;max-width:900px;margin:0 auto;width:100%}
+.dstage .label{color:rgba(255,255,255,.42);letter-spacing:.2em}
+.dring{position:absolute;left:50%;top:50%;width:min(560px,86%);aspect-ratio:1;transform:translate(-50%,-50%);
+  border-radius:50%;border:1px solid rgba(255,255,255,.07);pointer-events:none}
+.dring:after{content:"";position:absolute;inset:14%;border-radius:50%;border:1px solid rgba(255,255,255,.05)}
+.dstage.hit .dring{animation:ring .9s cubic-bezier(.2,.7,.3,1)}
+@keyframes ring{0%{opacity:.1;transform:translate(-50%,-50%) scale(.72)}40%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scale(1.18)}}
+.dname{font-size:clamp(38px,8.4vw,92px);font-weight:700;letter-spacing:-.045em;line-height:1.04;min-height:1.04em;
+  background:linear-gradient(175deg,#fff 34%,rgba(255,255,255,.62));-webkit-background-clip:text;background-clip:text;color:transparent;
+  text-wrap:balance}
+.dname.spin{filter:blur(1.4px);opacity:.5}
+.dname.idle{font-size:clamp(26px,4vw,40px);opacity:.42;letter-spacing:-.02em}
+@media (prefers-reduced-motion:reduce){
+  .dstage.hit .dname,.dstage.hit .dmulti span,.dstage.hit .dring{animation:none}
+  .dname.spin{filter:none}
+  .dbtns button:hover{transform:none}
+}
+.dstage.hit .dname{animation:land .55s cubic-bezier(.16,1,.3,1)}
+@keyframes land{0%{opacity:0;transform:translateY(16px) scale(.94);filter:blur(7px)}100%{opacity:1;transform:none;filter:none}}
+.drole{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green2);margin-top:16px;min-height:1.2em}
+.dmulti{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:4px}
+.dmulti span{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:16px;
+  padding:16px 26px;font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:-.025em}
+.dstage.hit .dmulti span{animation:land .55s cubic-bezier(.16,1,.3,1) both}
+.dstage.hit .dmulti span:nth-child(2){animation-delay:.08s}
+.dstage.hit .dmulti span:nth-child(3){animation-delay:.16s}
+.dbtns{display:flex;gap:11px;justify-content:center;margin-top:38px;flex-wrap:wrap}
+.dbtns button{font:inherit;font-size:16px;font-weight:600;border:0;border-radius:999px;padding:15px 40px;cursor:pointer;
+  background:#fff;color:var(--navy);transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s;
+  box-shadow:0 10px 26px -10px rgba(255,255,255,.5)}
+.dbtns button:hover{transform:translateY(-2px)}
+.dbtns button:active{transform:translateY(0) scale(.97)}
+.dbtns button.g{background:rgba(255,255,255,.1);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);padding:15px 26px}
+.dbtns button:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.dmeta{font-size:12.5px;color:rgba(255,255,255,.45);margin-top:22px;letter-spacing:.01em}
+.dmeta b{color:var(--green2)}
+.dpanel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px 24px}
+#pools{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.pool{border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:#FBFBFD}
 .ph{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .ph .nm{font-size:14.5px;font-weight:600}
 .ph .nm i{font-style:normal;color:var(--ink3);font-weight:600;margin-left:7px;font-size:12.5px}
+@media (max-width:900px){#pools{grid-template-columns:1fr}}
 .sw{position:relative;width:38px;height:22px;border-radius:999px;background:rgba(0,0,0,.14);border:0;cursor:pointer;padding:0;flex:none;transition:background .22s}
 .sw:after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .22s}
 .sw.on{background:var(--green)}
@@ -217,7 +248,7 @@ body.drill .pi .s{display:block}
 .nchip.off{opacity:.42;text-decoration:line-through}
 .nchip.mine{background:#F2F7FF;border-color:rgba(1,103,239,.25);color:#0B4FAF}
 .nchip.used{box-shadow:inset 0 -2px 0 var(--green)}
-.addrow{display:flex;gap:8px;margin-top:14px}
+.addrow{display:flex;gap:8px;margin-top:16px;max-width:560px}
 .addrow input{flex:1;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--bg);min-width:0}
 .addrow input:focus{background:#fff;outline:2px solid var(--blue2);outline-offset:-1px}
 .addrow select{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);cursor:pointer}
@@ -273,10 +304,11 @@ footer a{color:rgba(255,255,255,.8)}
    <p>For rehearsal and for the booth floor. All 31 students are in by default; switch advisors and instructors on when they are drilling too. Tap a name to sit them out, or add anyone who is missing.</p>
   </div>
   <div class="draw">
-   <div class="dstage">
+   <div class="dstage" id="dstage">
+    <div class="dring"></div>
     <div class="inner">
-     <span class="label" style="color:rgba(255,255,255,.5)">Up next</span>
-     <div class="dname" id="dname">Tap draw</div>
+     <span class="label">Up next</span>
+     <div class="dname idle" id="dname">Nobody yet</div>
      <div class="drole" id="drole"></div>
      <div class="dmulti" id="dmulti"></div>
      <div class="dbtns">
@@ -288,8 +320,8 @@ footer a{color:rgba(255,255,255,.8)}
     </div>
    </div>
    <div class="dpanel">
-    <div class="ph" style="padding-bottom:4px">
-     <span class="nm">Pools</span>
+    <div class="ph">
+     <span class="label">Who is in the hat</span>
      <button class="tgl" id="noRep" type="button" style="padding:5px 13px 5px 9px;font-size:13px"><i></i>No repeats</button>
     </div>
     <div id="pools"></div>
@@ -785,7 +817,7 @@ $('addBtn').onclick=addName;
 $('addName').onkeydown=function(e){if(e.key==='Enter')addName()};
 $('resetAll').onclick=function(){
   st.off={};st.used=[];POOLS.forEach(function(p){st.add[p.id]=[];st.on[p.id]=p.on});st.noRep=1;
-  save();paintPools();$('dname').textContent='Tap draw';$('drole').textContent='';$('dmulti').innerHTML=''
+  save();paintPools();$('dname').textContent='Nobody yet';$('dname').className='dname idle';$('drole').textContent='';$('dmulti').innerHTML='';$('dstage').classList.remove('hit')
 };
 
 function paintMeta(){
@@ -814,21 +846,30 @@ var spinning=false;
 function run(k){
   if(spinning)return;var res=pick(k);if(!res||!res.length)return;
   spinning=true;
-  var p=pool(),t=0,iv=setInterval(function(){
-    var r=p[Math.floor(Math.random()*p.length)];
-    $('dname').textContent=k===1?r.n:'…';
-    $('dmulti').innerHTML=k===1?'':res.map(function(){return '<span>'+p[Math.floor(Math.random()*p.length)].n+'</span>'}).join('');
-    $('drole').textContent=k===1?r.r:'';
-    if(++t>11){
-      clearInterval(iv);spinning=false;
-      $('dname').classList.remove('spin');
-      if(k===1){$('dname').textContent=res[0].n;$('drole').textContent=res[0].r;$('dmulti').innerHTML=''}
-      else{$('dname').textContent='';$('drole').textContent=k+' up';
-        $('dmulti').innerHTML=res.map(function(r2){return '<span>'+r2.n+'</span>'}).join('')}
-      paintPools()
+  var p=pool(),stage=$('dstage'),t=0,N=22;
+  stage.classList.remove('hit');
+  $('dname').classList.remove('idle');
+  $('dname').classList.add('spin');
+  $('drole').textContent='';
+  function tick(){
+    if(t<N){
+      if(k===1)$('dname').textContent=p[Math.floor(Math.random()*p.length)].n;
+      else{$('dname').textContent='';
+        $('dmulti').innerHTML=res.map(function(){return '<span>'+p[Math.floor(Math.random()*p.length)].n+'</span>'}).join('')}
+      t++;
+      /* decelerate: 38 ms at the start, ~190 ms at the end */
+      setTimeout(tick,38+Math.pow(t/N,2.6)*160);
+      return
     }
-  },55);
-  $('dname').classList.add('spin')
+    spinning=false;
+    $('dname').classList.remove('spin');
+    if(k===1){$('dname').textContent=res[0].n;$('drole').textContent=res[0].r;$('dmulti').innerHTML=''}
+    else{$('dname').textContent='';$('drole').textContent=k+' up';
+      $('dmulti').innerHTML=res.map(function(r2){return '<span>'+r2.n+'</span>'}).join('')}
+    void stage.offsetWidth;stage.classList.add('hit');
+    paintPools()
+  }
+  tick()
 }
 $('d1').onclick=function(){run(1)};
 $('d2').onclick=function(){run(2)};
