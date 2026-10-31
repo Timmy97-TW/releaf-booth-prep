@@ -237,12 +237,12 @@ footer a{color:rgba(255,255,255,.8)}
   <a class="brand" href="#top"><img src="img/logo.png" alt=""><span class="bw"><b>Booth Pitch Prep</b><small>GEMS Taiwan · ReLEAF</small></span></a>
   <button class="menu" id="menu" aria-label="Menu"><span></span><span></span></button>
   <ul class="nlinks" id="nlinks">
+   <li><a href="#draw">Who answers</a></li>
    <li><a href="#open">Open</a></li>
    <li><a href="#play">Playground</a></li>
    <li><a href="#phrases">Phrases</a></li>
    <li><a href="#results">Results</a></li>
    <li><a href="#guard">Guard rails</a></li>
-   <li><a href="#draw">Who answers</a></li>
   </ul>
  </div>
 </nav>
@@ -253,8 +253,8 @@ footer a{color:rgba(255,255,255,.8)}
   <h1>The words to hit.<br><span class="gt">The numbers to have ready.</span></h1>
   <p class="lede">Everything a ReLEAF booth answer needs, in one place. Pick who is asking, drill the phrases, check the number, and draw the next person to speak.</p>
   <div class="hcta">
-   <a href="#play">Open the playground</a>
-   <a class="ghost" href="#draw">Draw a name</a>
+   <a href="#draw">Draw a name</a>
+   <a class="ghost" href="#play">Open the playground</a>
   </div>
   <div class="hstat">
    <div><b class="tw">102.4 h</b><small>perfusion run, cells in, protein out</small></div>
@@ -265,6 +265,44 @@ footer a{color:rgba(255,255,255,.8)}
  </div>
 </header>
 
+<section id="draw">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">Who answers</span>
+   <h2>Name randomizer</h2>
+   <p>For rehearsal and for the booth floor. All 31 students are in by default; switch advisors and instructors on when they are drilling too. Tap a name to sit them out, or add anyone who is missing.</p>
+  </div>
+  <div class="draw">
+   <div class="dstage">
+    <div class="inner">
+     <span class="label" style="color:rgba(255,255,255,.5)">Up next</span>
+     <div class="dname" id="dname">Tap draw</div>
+     <div class="drole" id="drole"></div>
+     <div class="dmulti" id="dmulti"></div>
+     <div class="dbtns">
+      <button id="d1" type="button">Draw</button>
+      <button id="d2" class="g" type="button">Draw 2</button>
+      <button id="d3" class="g" type="button">Draw 3</button>
+     </div>
+     <div class="dmeta" id="dmeta"></div>
+    </div>
+   </div>
+   <div class="dpanel">
+    <div class="ph" style="padding-bottom:4px">
+     <span class="nm">Pools</span>
+     <button class="tgl" id="noRep" type="button" style="padding:5px 13px 5px 9px;font-size:13px"><i></i>No repeats</button>
+    </div>
+    <div id="pools"></div>
+    <div class="addrow">
+     <input id="addName" type="text" placeholder="Add a name" autocomplete="off">
+     <select id="addPool"></select>
+     <button id="addBtn" type="button">Add</button>
+    </div>
+    <p class="hintline">Roster from <a href="https://2026.igem.wiki/gems-taiwan/team" target="_blank" rel="noopener">the team page</a>: 31 students, 4 student advisors, 6 instructors. Names you add and anyone you sit out are remembered in this browser only. <button id="resetAll" type="button" style="font:inherit;font-size:12.5px;border:0;background:none;color:var(--blue);cursor:pointer;padding:0;text-decoration:underline">Reset everything</button></p>
+   </div>
+  </div>
+ </div>
+</section>
 <section id="open">
  <div class="wrap">
   <div class="shead">
@@ -378,44 +416,6 @@ footer a{color:rgba(255,255,255,.8)}
  </div>
 </section>
 
-<section id="draw">
- <div class="wrap">
-  <div class="shead">
-   <span class="eyebrow">Who answers</span>
-   <h2>Name randomizer</h2>
-   <p>For rehearsal and for the booth floor. All 31 students are in by default; switch advisors and instructors on when they are drilling too. Tap a name to sit them out, or add anyone who is missing.</p>
-  </div>
-  <div class="draw">
-   <div class="dstage">
-    <div class="inner">
-     <span class="label" style="color:rgba(255,255,255,.5)">Up next</span>
-     <div class="dname" id="dname">Tap draw</div>
-     <div class="drole" id="drole"></div>
-     <div class="dmulti" id="dmulti"></div>
-     <div class="dbtns">
-      <button id="d1" type="button">Draw</button>
-      <button id="d2" class="g" type="button">Draw 2</button>
-      <button id="d3" class="g" type="button">Draw 3</button>
-     </div>
-     <div class="dmeta" id="dmeta"></div>
-    </div>
-   </div>
-   <div class="dpanel">
-    <div class="ph" style="padding-bottom:4px">
-     <span class="nm">Pools</span>
-     <button class="tgl" id="noRep" type="button" style="padding:5px 13px 5px 9px;font-size:13px"><i></i>No repeats</button>
-    </div>
-    <div id="pools"></div>
-    <div class="addrow">
-     <input id="addName" type="text" placeholder="Add a name" autocomplete="off">
-     <select id="addPool"></select>
-     <button id="addBtn" type="button">Add</button>
-    </div>
-    <p class="hintline">Roster from <a href="https://2026.igem.wiki/gems-taiwan/team" target="_blank" rel="noopener">the team page</a>: 31 students, 4 student advisors, 6 instructors. Names you add and anyone you sit out are remembered in this browser only. <button id="resetAll" type="button" style="font:inherit;font-size:12.5px;border:0;background:none;color:var(--blue);cursor:pointer;padding:0;text-decoration:underline">Reset everything</button></p>
-   </div>
-  </div>
- </div>
-</section>
 
 <footer>
  <div class="wrap">
@@ -431,7 +431,7 @@ var $=function(i){return document.getElementById(i)};
 $('menu').onclick=function(){$('nav').classList.toggle('open')};
 $('nlinks').onclick=function(e){if(e.target.tagName==='A')$('nav').classList.remove('open')};
 (function(){
-  var ids=['open','play','phrases','results','guard','draw'],links={};
+  var ids=['draw','open','play','phrases','results','guard'],links={};
   ids.forEach(function(id){links[id]=document.querySelector('.nlinks a[href="#'+id+'"]')});
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){
