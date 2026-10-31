@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ReLEAF Booth Pitch Prep</title>
+<meta name="description" content="GEMS Taiwan · ReLEAF: the phrases to hit, the numbers to have ready, and who answers next. Booth H-17, Biomanufacturing Village.">
+<meta name="theme-color" content="#00061C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ReLEAF Booth Pitch Prep · GEMS Taiwan">
+<meta property="og:description" content="The phrases to hit, the numbers to have ready, and who answers next.">
+<meta property="og:url" content="https://timmy97-tw.github.io/releaf-booth-prep/">
+<link rel="icon" href="img/logo.png">
+<link rel="apple-touch-icon" href="img/logo.png">
+<style>
+:root{
+  --navy:#00061C; --navy2:#0A1433;
+  --blue:#0167EF; --blue2:#2887FF; --sky:#61ABFE;
+  --green:#00B87A; --green2:#00D492; --mint:#E6FAF2;
+  --ink:#1D1D1F; --ink2:#6E6E73; --ink3:#86868B;
+  --bg:#F5F5F7; --card:#FFFFFF; --line:rgba(0,0,0,.08);
+  --red:#E5484D; --violet:#7C5CFF; --amber:#F59E0B;
+  --grad:linear-gradient(100deg,var(--blue) 0%,#00A3C4 50%,var(--green) 100%);
+  --r:22px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue","PingFang TC","Noto Sans TC",Arial,sans-serif;
+  font-size:17px;line-height:1.47;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{margin:0;letter-spacing:-.025em;line-height:1.08;text-wrap:balance}
+p,li{text-wrap:pretty}
+::selection{background:rgba(1,103,239,.18)}
+:focus-visible{outline:2px solid var(--blue2);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.tw{font-variant-numeric:tabular-nums}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(0,6,28,.82);backdrop-filter:saturate(180%) blur(22px);-webkit-backdrop-filter:saturate(180%) blur(22px);box-shadow:0 1px 0 rgba(255,255,255,.07)}
+.nav-in{max-width:1240px;margin:0 auto;padding:0 22px;height:60px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;white-space:nowrap;flex:none}
+.brand:hover{text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.bw{display:flex;flex-direction:column;line-height:1.05}
+.bw b{font-size:15.5px;font-weight:700}
+.bw small{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:3px}
+.nlinks{display:flex;align-items:center;gap:2px;list-style:none;margin:0 0 0 auto;padding:0}
+.nlinks a{display:block;color:rgba(255,255,255,.66);font-size:13px;font-weight:500;padding:7px 11px;border-radius:999px;white-space:nowrap;transition:color .2s,background .2s}
+.nlinks a:hover{color:#fff;text-decoration:none;background:rgba(255,255,255,.06)}
+.nlinks a.on{color:#fff;background:rgba(255,255,255,.12)}
+.menu{display:none;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);cursor:pointer;position:relative;padding:0;margin-left:auto}
+.menu span{position:absolute;left:11px;right:11px;height:1.6px;border-radius:2px;background:#fff;transition:transform .3s,top .3s}
+.menu span:first-child{top:15px} .menu span:last-child{top:21px}
+.nav.open .menu span:first-child{top:18px;transform:rotate(45deg)}
+.nav.open .menu span:last-child{top:18px;transform:rotate(-45deg)}
+@media (max-width:900px){
+  .menu{display:block}
+  .nlinks{position:absolute;top:100%;left:0;right:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:14px 16px 20px;background:#020A24;box-shadow:0 1px 0 rgba(255,255,255,.07),0 24px 40px rgba(0,0,0,.35);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .25s,visibility 0s .25s}
+  .nav.open .nlinks{opacity:1;visibility:visible;transform:none;transition:opacity .25s,transform .25s}
+  .nlinks a{font-size:16px;padding:12px 14px;border-radius:14px;color:rgba(255,255,255,.85)}
+}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:68px 0 60px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;pointer-events:none}
+.hero:before{width:620px;height:620px;left:-180px;top:-280px;background:radial-gradient(circle,var(--blue) 0%,transparent 65%)}
+.hero:after{width:560px;height:560px;right:-160px;bottom:-320px;background:radial-gradient(circle,var(--green) 0%,transparent 65%)}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--green2)}
+.kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--green2);box-shadow:0 0 0 4px rgba(0,212,146,.18);animation:pulse 2.2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(0,212,146,0)}}
+.hero h1{font-size:clamp(40px,6.4vw,74px);font-weight:700;margin:14px 0 14px}
+.hero h1 .gt{background:linear-gradient(100deg,var(--sky),var(--green2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:clamp(17px,1.9vw,20px);color:rgba(255,255,255,.72);max-width:32em;margin:0}
+.hcta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hcta a{font-size:14.5px;font-weight:600;border-radius:999px;padding:10px 20px;background:#fff;color:var(--navy)}
+.hcta a:hover{text-decoration:none;opacity:.9}
+.hcta a.ghost{background:rgba(255,255,255,.1);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.hstat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.hstat div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px 16px}
+.hstat b{display:block;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.hstat small{display:block;font-size:12px;color:rgba(255,255,255,.6);margin-top:4px;line-height:1.35}
+@media (max-width:760px){.hstat{grid-template-columns:1fr 1fr}}
+
+/* sections */
+section{padding:62px 0}
+section+section{border-top:1px solid var(--line)}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+.shead{margin-bottom:26px}
+.shead h2{font-size:clamp(28px,3.6vw,40px);font-weight:700;margin:8px 0 0}
+.shead p{color:var(--ink2);margin:10px 0 0;max-width:46em;font-size:16.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+
+/* open */
+.open-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;align-items:start}
+.quote{background:linear-gradient(160deg,#fff,#FAFCFF);border:1px solid var(--line);border-radius:var(--r);padding:30px 32px}
+.quote p{font-size:clamp(20px,2.4vw,26px);line-height:1.34;font-weight:600;letter-spacing:-.02em;margin:14px 0 0}
+.quote p em{font-style:normal;background:linear-gradient(transparent 62%,rgba(0,212,146,.3) 62%)}
+.beats{display:grid;gap:10px}
+.beat{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.beat b{flex:none;width:22px;height:22px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;margin-top:2px}
+.beat span{font-size:15px;line-height:1.4}
+.beat span i{display:block;font-style:normal;color:var(--ink3);font-size:12.5px;margin-top:3px}
+@media (max-width:900px){.open-grid{grid-template-columns:1fr}}
+
+/* playground */
+.who{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.who button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink2);border-radius:999px;padding:9px 16px;cursor:pointer;transition:all .18s}
+.who button:hover{border-color:rgba(0,0,0,.2);color:var(--ink)}
+.who button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.stage{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stage-top{padding:26px 28px;background:linear-gradient(135deg,var(--navy) 0%,#0B1A3F 100%);color:#fff}
+.stage-top .label{color:rgba(255,255,255,.5)}
+.stage-top h3{font-size:clamp(21px,2.4vw,27px);font-weight:700;margin:8px 0 0;line-height:1.22}
+.stage-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.sb{padding:24px 28px}
+.sb+.sb{border-left:1px solid var(--line)}
+.sb ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:11px}
+.sb li{font-size:15.5px;line-height:1.45;padding-left:20px;position:relative}
+.sb li:before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--green)}
+.sb.warn li:before{background:var(--amber)}
+.hits{padding:20px 28px 24px;border-top:1px solid var(--line);background:#FBFBFD}
+.hits .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.hit{font-size:13.5px;font-weight:600;background:var(--mint);color:#00674A;border-radius:999px;padding:7px 14px;cursor:pointer;border:1px solid rgba(0,184,122,.22);transition:all .16s}
+.hit:hover{background:#D6F6E9}
+.hit.done{background:var(--navy);border-color:var(--navy);color:#fff}
+.hit.done:before{content:"✓ "}
+@media (max-width:900px){.stage-body{grid-template-columns:1fr}.sb+.sb{border-left:0;border-top:1px solid var(--line)}}
+
+/* phrases */
+.ptools{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:22px}
+.tgl{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--ink2);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 15px 7px 11px;cursor:pointer;user-select:none}
+.tgl i{width:34px;height:20px;border-radius:999px;background:rgba(0,0,0,.14);position:relative;transition:background .22s;flex:none}
+.tgl i:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .22s}
+.tgl.on{color:var(--ink)}
+.tgl.on i{background:var(--green)}
+.tgl.on i:after{transform:translateX(14px)}
+.pgroups{display:grid;gap:16px}
+.pg{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+.pg h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
+.pg h3 span{font-weight:600;color:var(--ink3);font-size:13px;margin-left:8px;letter-spacing:0}
+.plist{display:grid;gap:10px;margin-top:16px}
+.pi{border:1px solid var(--line);border-radius:14px;padding:13px 16px;cursor:pointer;transition:border-color .18s,background .18s}
+.pi:hover{border-color:rgba(0,0,0,.18);background:#FBFBFD}
+.pi .t{font-size:16px;font-weight:600;display:flex;gap:10px;align-items:baseline}
+.pi .t:before{content:"“";color:var(--green);font-size:22px;line-height:1;font-weight:700}
+.pi .s{font-size:14.5px;color:var(--ink2);line-height:1.45;margin-top:9px;display:none}
+.pi.open .s{display:block}
+.pi.open{border-color:rgba(1,103,239,.3);background:#F7FAFF}
+body.drill .pi .t{filter:blur(5px)}
+body.drill .pi.open .t{filter:none}
+body.drill .pi .s{display:block}
+
+/* results */
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
+.filters button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink2);border-radius:999px;padding:7px 14px;cursor:pointer}
+.filters button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:19px 20px;display:flex;flex-direction:column}
+.rc .n{font-size:27px;font-weight:700;letter-spacing:-.03em;line-height:1.08;font-variant-numeric:tabular-nums;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rc .d{font-size:15px;line-height:1.4;margin-top:9px;flex:1}
+.rc .w{font-size:12.5px;color:var(--ink3);margin-top:12px;display:flex;align-items:center;gap:7px}
+.rc .w em{font-style:normal;font-weight:700;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);background:var(--bg);border-radius:6px;padding:3px 7px}
+.rc.soft{border-color:rgba(245,158,11,.4);background:#FFFCF5}
+.rc.soft .w em{background:rgba(245,158,11,.14);color:#92610A}
+@media (max-width:1000px){.rgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.rgrid{grid-template-columns:1fr}}
+
+/* guard */
+.gcols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.gcard{border-radius:var(--r);padding:24px;border:1px solid var(--line);background:var(--card)}
+.gcard.no{border-color:rgba(229,72,77,.3);background:#FFF8F8}
+.gcard h3{font-size:18px;font-weight:700;margin-bottom:4px}
+.gcard ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.gcard li{font-size:15.5px;line-height:1.45;padding-left:24px;position:relative}
+.gcard.no li:before{content:"✕";position:absolute;left:0;top:0;color:var(--red);font-weight:700;font-size:13px}
+.gcard.yes li:before{content:"✓";position:absolute;left:0;top:0;color:var(--green);font-weight:700;font-size:14px}
+.cx{display:grid;gap:10px}
+.cxi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:grid;grid-template-columns:1fr 1.25fr;gap:18px}
+.cxi .a{font-size:15.5px;font-weight:600;line-height:1.4}
+.cxi .b{font-size:14.5px;color:var(--ink2);line-height:1.45}
+.cxi .b b{color:var(--ink);font-weight:600}
+@media (max-width:900px){.gcols{grid-template-columns:1fr}.cxi{grid-template-columns:1fr;gap:8px}}
+
+/* randomizer */
+.draw{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;align-items:start}
+.dstage{background:linear-gradient(145deg,var(--navy),#0C1C44);border-radius:var(--r);padding:34px 30px;color:#fff;text-align:center;position:relative;overflow:hidden;min-height:330px;display:flex;flex-direction:column;justify-content:center}
+.dstage:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:50%;top:-55%;transform:translateX(-50%);background:radial-gradient(circle,rgba(0,212,146,.3) 0%,transparent 65%);filter:blur(60px);pointer-events:none}
+.dstage .inner{position:relative;z-index:1}
+.dname{font-size:clamp(30px,5vw,46px);font-weight:700;letter-spacing:-.03em;line-height:1.1;min-height:1.1em;transition:opacity .1s}
+.dname.spin{opacity:.45}
+.drole{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--green2);margin-top:12px;min-height:1.2em}
+.dmulti{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:6px}
+.dmulti span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:10px 16px;font-size:19px;font-weight:600;letter-spacing:-.01em}
+.dbtns{display:flex;gap:10px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.dbtns button{font:inherit;font-size:15px;font-weight:600;border:0;border-radius:999px;padding:12px 26px;cursor:pointer;background:#fff;color:var(--navy)}
+.dbtns button.g{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+.dbtns button:disabled{opacity:.4;cursor:not-allowed}
+.dmeta{font-size:12.5px;color:rgba(255,255,255,.5);margin-top:18px}
+.dpanel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+.pool{margin-top:16px}
+.pool+.pool{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ph .nm{font-size:14.5px;font-weight:600}
+.ph .nm i{font-style:normal;color:var(--ink3);font-weight:600;margin-left:7px;font-size:12.5px}
+.sw{position:relative;width:38px;height:22px;border-radius:999px;background:rgba(0,0,0,.14);border:0;cursor:pointer;padding:0;flex:none;transition:background .22s}
+.sw:after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .22s}
+.sw.on{background:var(--green)}
+.sw.on:after{transform:translateX(16px)}
+.names{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.nchip{font-size:13px;font-weight:500;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer;color:var(--ink2);transition:all .15s}
+.nchip:hover{border-color:rgba(0,0,0,.2)}
+.nchip.off{opacity:.42;text-decoration:line-through}
+.nchip.mine{background:#F2F7FF;border-color:rgba(1,103,239,.25);color:#0B4FAF}
+.nchip.used{box-shadow:inset 0 -2px 0 var(--green)}
+.addrow{display:flex;gap:8px;margin-top:14px}
+.addrow input{flex:1;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--bg);min-width:0}
+.addrow input:focus{background:#fff;outline:2px solid var(--blue2);outline-offset:-1px}
+.addrow select{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);cursor:pointer}
+.addrow button{font:inherit;font-size:15px;font-weight:600;border:0;border-radius:12px;padding:10px 18px;background:var(--navy);color:#fff;cursor:pointer}
+.hintline{font-size:12.5px;color:var(--ink3);margin-top:12px;line-height:1.4}
+@media (max-width:900px){.draw{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:rgba(255,255,255,.55);padding:40px 0;font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+footer a{color:rgba(255,255,255,.8)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+ <div class="nav-in">
+  <a class="brand" href="#top"><img src="img/logo.png" alt=""><span class="bw"><b>Booth Pitch Prep</b><small>GEMS Taiwan · ReLEAF</small></span></a>
+  <button class="menu" id="menu" aria-label="Menu"><span></span><span></span></button>
+  <ul class="nlinks" id="nlinks">
+   <li><a href="#open">Open</a></li>
+   <li><a href="#play">Playground</a></li>
+   <li><a href="#phrases">Phrases</a></li>
+   <li><a href="#results">Results</a></li>
+   <li><a href="#guard">Guard rails</a></li>
+   <li><a href="#draw">Who answers</a></li>
+  </ul>
+ </div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <span class="kicker"><span class="dot"></span>Booth H-17 · Biomanufacturing Village · Paris, 13–16 Nov</span>
+  <h1>The words to hit.<br><span class="gt">The numbers to have ready.</span></h1>
+  <p class="lede">Everything a ReLEAF booth answer needs, in one place. Pick who is asking, drill the phrases, check the number, and draw the next person to speak.</p>
+  <div class="hcta">
+   <a href="#play">Open the playground</a>
+   <a class="ghost" href="#draw">Draw a name</a>
+  </div>
+  <div class="hstat">
+   <div><b class="tw">102.4 h</b><small>perfusion run, cells in, protein out</small></div>
+   <div><b class="tw">5 of 8</b><small>our own predictions overturned</small></div>
+   <div><b class="tw">31</b><small>voices that changed the design</small></div>
+   <div><b class="tw">2</b><small>links never demonstrated — say so first</small></div>
+  </div>
+ </div>
+</header>
+
+<section id="open">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">The 15-second open</span>
+   <h2>Say this before anything else</h2>
+   <p>Four beats. It fits in fifteen seconds, it is all defensible, and it hands the listener the three things that make ReLEAF unusual.</p>
+  </div>
+  <div class="open-grid">
+   <div class="quote">
+    <span class="label">Word for word</span>
+    <p>“ReLEAF makes the plant protectant <em>on the farm, on the day the crop needs it</em>. The engineered cells <em>never leave the loop</em> — a 0.2 µm membrane keeps them in and lets the protein out. We ran it for <em>102 hours</em> and watched the protein cross while the cells did not.”</p>
+   </div>
+   <div class="beats">
+    <div class="beat"><b>1</b><span>Where manufacturing happens<i>On the farm, not shipped to it. No cold chain.</i></span></div>
+    <div class="beat"><b>2</b><span>What keeps it safe<i>Physical containment — a pore does not mutate.</i></span></div>
+    <div class="beat"><b>3</b><span>That it actually ran<i>102.4 h, protein on both sides, cells on one.</i></span></div>
+    <div class="beat"><b>4</b><span>Then stop and let them choose<i>Branch on what they ask next — that is the playground.</i></span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="play">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">Playground</span>
+   <h2>Who is asking?</h2>
+   <p>Tap whoever is standing in front of you. Lead with the left column, keep the right one in your pocket, and tick the phrases off as you land them.</p>
+  </div>
+  <div class="who" id="who"></div>
+  <div class="stage">
+   <div class="stage-top">
+    <span class="label" id="st-who">—</span>
+    <h3 id="st-lead">—</h3>
+   </div>
+   <div class="stage-body">
+    <div class="sb"><span class="label">Lead with this</span><ul id="st-say"></ul></div>
+    <div class="sb warn"><span class="label">Have ready — say it before they find it</span><ul id="st-ready"></ul></div>
+   </div>
+   <div class="hits">
+    <span class="label">Phrases to land <span id="st-count" class="tw"></span></span>
+    <div class="row" id="st-hits"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="phrases">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">Key phrases</span>
+   <h2>The words to hit</h2>
+   <p>Tap any line for the sentence it belongs in. Turn on drill mode to hide the phrases and read only the meaning — then say the phrase out loud before you reveal it.</p>
+  </div>
+  <div class="ptools">
+   <button class="tgl" id="drill" type="button"><i></i>Drill mode</button>
+   <button class="tgl" id="expand" type="button"><i></i>Show every sentence</button>
+  </div>
+  <div class="pgroups" id="pgroups"></div>
+ </div>
+</section>
+
+<section id="results">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">Key results</span>
+   <h2>Numbers, and where to point</h2>
+   <p>Every number here is on a live wiki page. Amber cards are the ones that cut against us — those are the ones to volunteer, not to defend.</p>
+  </div>
+  <div class="filters" id="rfilters"></div>
+  <div class="rgrid" id="rgrid"></div>
+ </div>
+</section>
+
+<section id="guard">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">Guard rails</span>
+   <h2>Never claim, always have</h2>
+   <p>Honesty beats polish. The pages disagree in places and they say so — naming it first is the strongest move available at the booth.</p>
+  </div>
+  <div class="gcols">
+   <div class="gcard no">
+    <h3>Do not claim</h3>
+    <span class="label">A judge will test any of these in two clicks</span>
+    <ul>
+     <li>A working light switch. It is <b>modulation, not switching</b>: supported at 13 h, unresolved at 16 h, n&nbsp;=&nbsp;2.</li>
+     <li>A validated field effect. No protectant has been through a field trial.</li>
+     <li>A titre. 2.5–6.5 µg/mL is low for a bioprocess, and longer runs do not mean bigger harvests.</li>
+     <li>A price the pages agree on. US$2,280 vs US$3,800 per hectare, and they name each other.</li>
+     <li>“Purified” protein. Everything applied was 0.22 µm filtered crude supernatant.</li>
+     <li>“First”. Say <b>rare in high-school iGEM</b> and give the evidence instead.</li>
+     <li>That we proved AmilCP failed on folding. We reasoned to it; the control was never run.</li>
+    </ul>
+   </div>
+   <div class="gcard yes">
+    <h3>Three sentences for every pocket</h3>
+    <span class="label">They work on almost any hard question</span>
+    <ul>
+     <li>“Our statistics are on the instrument, not on the biology — that is the next experiment, and we know which one.”</li>
+     <li>“That result goes against us, and here it is.”</li>
+     <li>“The pages disagree and they say so — here is which one is the authority.”</li>
+    </ul>
+    <span class="label" style="display:block;margin-top:22px">And the one they always ask</span>
+    <ul>
+     <li>“Name the two links never demonstrated”: <b>forecast → light</b> (no prediction has ever driven a lamp onto a culture) and <b>permeate → irrigation</b> (every plant experiment was applied by hand).</li>
+    </ul>
+   </div>
+  </div>
+  <div class="cx" id="cx"></div>
+ </div>
+</section>
+
+<section id="draw">
+ <div class="wrap">
+  <div class="shead">
+   <span class="eyebrow">Who answers</span>
+   <h2>Name randomizer</h2>
+   <p>For rehearsal and for the booth floor. All 31 students are in by default; switch advisors and instructors on when they are drilling too. Tap a name to sit them out, or add anyone who is missing.</p>
+  </div>
+  <div class="draw">
+   <div class="dstage">
+    <div class="inner">
+     <span class="label" style="color:rgba(255,255,255,.5)">Up next</span>
+     <div class="dname" id="dname">Tap draw</div>
+     <div class="drole" id="drole"></div>
+     <div class="dmulti" id="dmulti"></div>
+     <div class="dbtns">
+      <button id="d1" type="button">Draw</button>
+      <button id="d2" class="g" type="button">Draw 2</button>
+      <button id="d3" class="g" type="button">Draw 3</button>
+     </div>
+     <div class="dmeta" id="dmeta"></div>
+    </div>
+   </div>
+   <div class="dpanel">
+    <div class="ph" style="padding-bottom:4px">
+     <span class="nm">Pools</span>
+     <button class="tgl" id="noRep" type="button" style="padding:5px 13px 5px 9px;font-size:13px"><i></i>No repeats</button>
+    </div>
+    <div id="pools"></div>
+    <div class="addrow">
+     <input id="addName" type="text" placeholder="Add a name" autocomplete="off">
+     <select id="addPool"></select>
+     <button id="addBtn" type="button">Add</button>
+    </div>
+    <p class="hintline">Roster from <a href="https://2026.igem.wiki/gems-taiwan/team" target="_blank" rel="noopener">the team page</a>: 31 students, 4 student advisors, 6 instructors. Names you add and anyone you sit out are remembered in this browser only. <button id="resetAll" type="button" style="font:inherit;font-size:12.5px;border:0;background:none;color:var(--blue);cursor:pointer;padding:0;text-decoration:underline">Reset everything</button></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <span>ReLEAF · GEMS Taiwan · iGEM 2026 · Booth H-17, Biomanufacturing Village</span>
+  <span><a href="https://2026.igem.wiki/gems-taiwan/">Wiki</a> · <a href="https://timmy97-tw.github.io/releaf-jamboree/">Paris dashboard</a></span>
+ </div>
+</footer>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+
+/* ---------------- nav ---------------- */
+$('menu').onclick=function(){$('nav').classList.toggle('open')};
+$('nlinks').onclick=function(e){if(e.target.tagName==='A')$('nav').classList.remove('open')};
+(function(){
+  var ids=['open','play','phrases','results','guard','draw'],links={};
+  ids.forEach(function(id){links[id]=document.querySelector('.nlinks a[href="#'+id+'"]')});
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){for(var k in links)links[k].classList.remove('on');
+        if(links[e.target.id])links[e.target.id].classList.add('on')}
+    })
+  },{rootMargin:'-45% 0px -50% 0px'});
+  ids.forEach(function(id){io.observe($(id))});
+})();
+
+/* ---------------- playground ---------------- */
+var WHO=[
+ {k:'Judge · Measurement',
+  lead:'We pre-registered our own instrument before we measured with it — and five of our eight predictions failed.',
+  say:['Eleven algorithms replayed on one logged data set, so the algorithm is the only thing that differs.',
+       'The in-line photometer agrees with a commercial benchtop with <b>no transform fitted</b>: median paired difference 3.8%.',
+       'The lever turned out to be the acceptance gate, not the estimator — worst bubble error 2.44 → 0.016 OD.',
+       'We published an artefact in our own record: 91.5% of 2,671 reference readings were exact integers.'],
+  ready:['Silica calibrates the instrument, not the cells — a washed-cell dilution series is still owed.',
+         'The ×5.57 factor and the ~OD 2.5 ceiling come from one run; OD 3.77 is extrapolated turbidity.',
+         'No biological replicates or statistics anywhere on the biology.'],
+  hits:['pre-registered before we measured','no transform fitted','five of eight failed','the gate, not the estimator','silica calibrates the instrument, not the cells']},
+
+ {k:'Judge · Hardware',
+  lead:'Four instruments, every build file public, and three people outside the team have built one.',
+  say:['A 1 L perfusion reactor, two in-line photometers, a dual-wavelength light plate, a hydroponics plate.',
+       'The membrane was characterised against its own plumbing — the plumbing is 46–55% of total ΔP.',
+       'The pinch valve is the driving force: closing it lifts mean TMP 0.03 → 0.16 bar and harvests 20–30 mL in a minute.',
+       'Interlocks live in firmware, not the UI: over 0.70 bar for five samples stops both pumps and latches.'],
+  ready:['Green light has never been into the reactor — the light work is all on the LPA.',
+         'Containment evidence is two single platings, no replicate, no recorded detection limit.',
+         'The bioreactor page carries a DNPH unit error, ~1000× off; Results is the authority.'],
+  hits:['every build file public','three outside builders','the plumbing is half the pressure drop','the pinch valve is the driving force','retention demonstrated, not a log reduction']},
+
+ {k:'Judge · IHP',
+  lead:'Thirty-one voices over seven months, and the decisions they changed are nameable.',
+  say:['Prof. Chen Wen-liang, April: keep the bacteria in a vessel and sell the consumable. That is why a bioreactor exists at all.',
+       'Dr. Jennifer Brophy removed our kill switch and made the membrane the containment.',
+       'Prof. Chang Jo-Shu found that nothing pushed the protectant from lumen to shell — hence the pinch valve.',
+       'Teacher He replaced two boards with one mainboard; Dr. Peng voided one of our own runs.'],
+  ready:['The organic exclusion is a published loss, not a footnote — and three pages read differently on it.',
+         'Entrepreneurship still claims genetic containment in the present tense. That tense is wrong.',
+         'Counts disagree between pages: seven vs nine months, 116 vs 160+ booth visitors.'],
+  hits:['keep them in a vessel, sell the consumable','Brophy removed our kill switch','Chang found there was no driving force','the decisions are nameable','the organic exclusion is a published loss']},
+
+ {k:'Judge · Biomanufacturing',
+  lead:'Production, recovery and containment are one unit operation — the wall that holds the cells in is the wall the product crosses.',
+  say:['No separate downstream step and nothing is lysed.',
+       'It runs at the point of use, so the protectant never enters a cold chain.',
+       'Keeping the organism in the machine splits the regulation: contained use for the strain, biostimulant route for the output.',
+       '102.4 h run, OD600 0.8 → 3.8, growth model R² 0.991; three days of shell-side output above the control at every point.'],
+  ready:['Do not say the titre is high. 2.5–6.5 µg/mL is low, and protein peaks at 12 h.',
+         'Every reactor time point is n = 1.',
+         'Longer runs do not mean bigger harvests.'],
+  hits:['one unit operation','containment is the product path','point of use, no cold chain','nothing is lysed','the titre is low and we say so']},
+
+ {k:'Professor',
+  lead:'The chain is the achievement — and I can name the two links that are missing.',
+  say:['Sensor → stress index → green light → circuit in WB800 → secretion → perfusion → membrane → activity in the permeate → plant response → dose and cost.',
+       'At every junction we can show the handover, and at every junction we can name what is still open.',
+       'Strong: containment 4 of 4 criteria, no shell-side growth, no leaks in six runs. Monitoring: OD, pH, pressure, flow in line for 434 h unattended.',
+       'ELISA counts protein; DNPH counts working enzyme. The gap between them is our post-secretory maturation reading, and it is untested.'],
+  ready:['Our statistics are on the instrument, not the biology.',
+         'Nine seedlings on one plate is n = 1, not n = 9 — the salt ladder stands on its monotonic trend, not its p value.',
+         'The light gate has not been shown to drive output.'],
+  hits:['the chain is the achievement','we can name what is still open','our statistics are on the instrument','amount versus activity','forecast → light, permeate → irrigation']},
+
+ {k:'Industry',
+  lead:'Cost per hectare, a 30-day regulatory route chosen on purpose, and we scale out rather than up.',
+  say:['Biostimulant is about 30 days to market; a biopesticide is three to five years.',
+       'A cash plan, not a valuation: peak cash low point −US$196,000 in Year 1, break-even at 226 hectares.',
+       'Scale-out has a formal linear method — hold wall shear and TMP constant, add channels. The module is the unit cell.',
+       'Worked from one module to eight, the membrane binds last; medium draw, pumps and energy bind first.'],
+  ready:['No techno-economic analysis and no field trial.',
+         'Capital is US$2,280 per hectare in the business plan and US$3,800 in our own model — a gap we have not resolved.',
+         'Our payback at efficacy 1 is 68 years against the geospatial analysis’s 4.9. A factor of fourteen.'],
+  hits:['the 30-day route on purpose','a cash plan, not a valuation','break-even 226 hectares','we scale out, not up','no field trial, no TEA']},
+
+ {k:'Peer team',
+  lead:'Here is what you can lift from our Contribution page tomorrow.',
+  say:['Printable build files and bills of materials for all four instruments.',
+       'The microscale DNPH activity sheet, and the plant assay protocol built from scratch.',
+       'The acceptance-gate design transfers to any flow-cell sensor, not just ours.',
+       'The 75–100 mM NaCl working window, and chlorophyll reported both ways because one way inverts.'],
+  ready:['The Attribution page is empty — say so rather than letting them find it.',
+         'The Slim photometer has one silica run and none on cells.',
+         'Our plant protocols omit sterilant, photoperiod and trehalose stock; the page admits it.'],
+  hits:['every build file public','the gate transfers to any flow cell','chlorophyll reported both ways','what you can reuse tomorrow']},
+
+ {k:'Visitor · public',
+  lead:'Small farms get hit by weather they cannot predict, and we make the medicine on the farm the day it is needed.',
+  say:['99.2% of farms are under two hectares, and they work 85.3% of the farmland.',
+       'Warming has run at 0.29 °C per decade since 1991 — it is volatility, not just heat.',
+       'Our bacteria live inside the machine. Only the protein they make comes out.',
+       'The farmer approves a run on the app, collects it from the bottle, dilutes it and sprays. No lab skills.'],
+  ready:['Nothing we make is sprayed with live bacteria in it.',
+         'This has not been on a real farm yet — pilots are five to ten units for one season.',
+         'The protectant is a biostimulant, not a pesticide.'],
+  hits:['on the farm, on the day the crop needs it','the cells never leave the loop','nothing added, nothing left','approve, collect, dilute, spray']}
+];
+
+(function(){
+  var wrap=$('who'),cur=0;
+  WHO.forEach(function(w,i){
+    var b=document.createElement('button');b.type='button';b.textContent=w.k;
+    b.onclick=function(){cur=i;paint()};wrap.appendChild(b)
+  });
+  function paint(){
+    var w=WHO[cur];
+    [].forEach.call(wrap.children,function(b,i){b.classList.toggle('on',i===cur)});
+    $('st-who').textContent=w.k;
+    $('st-lead').textContent='“'+w.lead+'”';
+    $('st-say').innerHTML=w.say.map(function(s){return '<li>'+s+'</li>'}).join('');
+    $('st-ready').innerHTML=w.ready.map(function(s){return '<li>'+s+'</li>'}).join('');
+    var n=0;
+    $('st-hits').innerHTML=w.hits.map(function(s){return '<button class="hit" type="button">'+s+'</button>'}).join('');
+    $('st-count').textContent='0 / '+w.hits.length;
+    [].forEach.call($('st-hits').children,function(b){
+      b.onclick=function(){b.classList.toggle('done');
+        n=$('st-hits').querySelectorAll('.done').length;
+        $('st-count').textContent=n+' / '+w.hits.length}
+    });
+  }
+  paint();
+})();
+
+/* ---------------- key phrases ---------------- */
+var PHRASES=[
+ {g:'The system',items:[
+  ['on the farm, on the day the crop needs it','Manufacturing moved to the farm, not the product shipped to it. This is the positioning claim, and it is defensible.'],
+  ['the cells never leave the loop','The culture runs on the lumen side; only the soluble protectant crosses. Say it before anyone asks about release.'],
+  ['nothing added, nothing left','Light is how a number from the model reaches the cells: no inducer in the culture, no inducer in a product sprayed on food.'],
+  ['growth then production','The light gate separates the two phases — and we checked the trigger is cheap: six light arms gave 0.279–0.317 h⁻¹, all within one standard error.'],
+  ['one unit operation','Production, recovery and containment are the same step. There is no separate downstream and nothing is lysed.'],
+  ['point of use, no cold chain','Made on the day it is needed, so no refrigerated storage, no refrigerated transport, no shelf life to manage.'],
+  ['we scale out, not up','Tangential-flow filtration scales linearly: hold wall shear and TMP constant and add channels. The hollow-fibre module is the unit cell.'],
+  ['approve, collect, dilute, spray','The whole farmer-facing workflow. No laboratory skills — that is what the app and the farmer manual are for.']]},
+
+ {g:'Containment',items:[
+  ['containment is the product path','The 0.2 µm wall that holds the cells in is the wall the product crosses, so monitoring the membrane <i>is</i> monitoring containment.'],
+  ['a pore does not mutate','A biological switch is DNA under selection, so it mutates and fails. A pore is a genotype-independent barrier.'],
+  ['physical first, genetic on the 2027 roadmap','Dr. Brophy told us to make physical containment primary and we took it. The future plan is fine; the present tense on Entrepreneurship is wrong.'],
+  ['retention demonstrated, not a log reduction','Two single platings, no replicate, no recorded detection limit. Claim exactly that much.'],
+  ['it happened at 38 hours, and we traced it','A Luer valve broke in integrated prototype 3. The membrane did not fail; we traced the break to 35% H₂O₂ in the clean-in-place step.']]},
+
+ {g:'Measurement',items:[
+  ['no transform fitted','Our in-line photometer agrees with a commercial benchtop without a correction factor: median paired difference 3.8% on TiO₂.'],
+  ['pre-registered before we measured','Eleven algorithms, five metrics, eight predictions committed to the repository before the calibration run.'],
+  ['five of eight failed','And we report all eight. H6 scattered 0.77 against 0.78 — a one-sided estimator bets on the geometry it happens to sit in.'],
+  ['the gate, not the estimator','The spread gate caught 97% of bubble readings and rejected no clean one; the jump gate cut worst bubble error 2.44 → 0.016 OD.'],
+  ['silica calibrates the instrument, not the cells','1 µm spheres against rod-shaped bacteria that form chains. A washed-cell dilution series is still owed.'],
+  ['our statistics are on the instrument, not the biology','The single most useful sentence we have. Follow it with the next experiment, named.']]},
+
+ {g:'Honesty',items:[
+  ['modulation, not switching','Green raises activity; red does not switch it off. Our red LEDs emit at 640 nm and CcaSR needs about 672 nm to close.'],
+  ['supported at 13 h, unresolved at 16 h, n = 2','The honest form of the light result. The 16 h DNPH point reverses, and there is no statistic behind either.'],
+  ['amount versus activity','ELISA counts protein whether or not it works; DNPH only counts enzyme turning ACC into α-ketobutyrate. That is why they disagree.'],
+  ['filtered crude supernatant, not purified enzyme','Everything applied to a plant was 0.22 µm filtered supernatant. Any page saying “purified” is a wording error.'],
+  ['that result goes against us, and here it is','Use it on post-treatment in soil, the 16 h reversal, codon optimisation going the wrong way, the titre halving.'],
+  ['the pages disagree and they say so','Then name the authority page. Never improvise a reconciliation at the booth.'],
+  ['the chain is the achievement','Any single link is a B. Each junction had to hand a real output to the next one — and we can name what is open at each.'],
+  ['forecast → light, permeate → irrigation','The two links never demonstrated. If you can only remember one answer, remember this one.']]},
+
+ {g:'Human Practices',items:[
+  ['keep them in a vessel, sell the consumable','Prof. Chen Wen-liang, April. It killed our transgenic-rhizobacterium plan and is the reason a bioreactor exists at all.'],
+  ['Brophy removed our kill switch','Dr. Jennifer Brophy: switches mutate. That decision made the membrane the containment and changed what the hardware must monitor.'],
+  ['Chang found there was no driving force','Prof. Chang Jo-Shu, June: higher flow only recirculates. Hence the pinch valve, a smaller membrane, and pressure and flow instruments.'],
+  ['the decisions are nameable','The chassis, the containment strategy, the regulatory route, the product category, the business model. Five, with names attached.'],
+  ['the organic exclusion is a published loss','We cannot be applied to certified organic farms. Three of our own pages read differently on it — name that too.']]},
+
+ {g:'Market and route',items:[
+  ['the 30-day route on purpose','Biostimulant or fertilizer is about 30 days; a biopesticide is three to five years. That choice is a design decision, not a shortcut.'],
+  ['a cash plan, not a valuation','We are a social enterprise asking what funding gets us to self-sustaining, so we report the peak cash low point, not a terminal value.'],
+  ['break-even 226 hectares','Against US$627,000 of fixed cost in Years 0–4. At 70% of planned hectares it moves to Year 6 and IRR to about −7%.'],
+  ['five to ten pilot units for one season','Before any sale. Co-op purchase, rental and a cartridge subscription are all still on the table.'],
+  ['no field trial, no TEA','Say it unprompted. It is the first thing an industry visitor will look for.'],
+  ['abiotic only this year','Laws fixes this year’s claims to abiotic stress. Entrepreneurship’s biotic protection is an over-claim.']]}
+];
+
+(function(){
+  var html='';
+  PHRASES.forEach(function(g){
+    html+='<div class="pg"><h3>'+g.g+'<span>'+g.items.length+'</span></h3><div class="plist">';
+    g.items.forEach(function(it){
+      html+='<div class="pi"><div class="t">'+it[0]+'</div><div class="s">'+it[1]+'</div></div>'
+    });
+    html+='</div></div>'
+  });
+  $('pgroups').innerHTML=html;
+  $('pgroups').onclick=function(e){
+    var pi=e.target.closest('.pi');if(pi)pi.classList.toggle('open')
+  };
+  $('drill').onclick=function(){
+    this.classList.toggle('on');
+    document.body.classList.toggle('drill',this.classList.contains('on'));
+    if(this.classList.contains('on')){
+      $('expand').classList.remove('on');
+      [].forEach.call($('pgroups').querySelectorAll('.pi'),function(p){p.classList.remove('open')})
+    }
+  };
+  $('expand').onclick=function(){
+    this.classList.toggle('on');
+    var on=this.classList.contains('on');
+    [].forEach.call($('pgroups').querySelectorAll('.pi'),function(p){p.classList.toggle('open',on)})
+  };
+})();
+
+/* ---------------- key results ---------------- */
+/* [number, what it is, where, area, cuts-against-us] */
+var RES=[
+ ['102.4 h','Perfusion culture, OD600 0.8 → 3.8, growth model R² 0.991.','Biomanufacturing','Reactor'],
+ ['10.7 / 10.5','ACCD µg/mL, lumen against shell, same run (8 Oct, WB800). Protein crosses, cells do not.','Results','Reactor'],
+ ['72 h','Shell-side output, peak 6.52 µg/mL at 12 h, every sample above the 1.3 µg/mL plasmid-free control.','Results','Reactor'],
+ ['30.9','nmol α-KB mL⁻¹ h⁻¹ — DNPH activity peak at 18 h; specific activity 5–8.4 U/mg from 18 h on.','Results','Reactor'],
+ ['0.03 → 0.16 bar','Closing the pinch valve lifts mean TMP; 60 s harvests 20–30 mL without interrupting the culture.','Hardware','Reactor'],
+ ['2.0 → 4.4 kPa','Extra ΔP over runs 6 and 7; permeability 2,520 → 1,210 LMH/bar. Fouling tracked, no cleaning threshold reached.','Hardware','Reactor'],
+ ['US$1,022.67','Known materials in the reactor. Every build file, STL and parts list published.','Hardware','Hardware'],
+ ['400 × 240 × 620','mm. Working culture 0.5–1 L — it stands beside the crop.','Description','Hardware'],
+
+ ['3.8 %','Median paired difference against the BioDrop on TiO₂, with no transform fitted. R² 0.9999.','Measurement','Measurement'],
+ ['1.001','SiO₂ slope, p = 0.98 against unit slope. Intercept −0.123 OD, p = 0.005 — the offset is in the blank, not the optics.','Measurement','Measurement'],
+ ['5 of 8','Pre-registered predictions not supported. All eight reported, replay code published.','Measurement','Measurement'],
+ ['2.44 → 0.016','OD. Worst bubble error after the jump gate; the spread gate caught 97% of bubble readings and rejected no clean one.','Measurement','Measurement'],
+ ['0.286 ± 0.010','h⁻¹ growth rate, inside the 0.2705–0.3300 band registered on 1 October, before the run.','Measurement','Measurement'],
+ ['91.5 %','Of 2,671 reference readings fell on an exact integer. Our own firmware artefact — we found it and published it.','Measurement','Measurement',1],
+ ['434 h','In-line OD600 record, 2,720 rows, no sample withdrawn. An autoencoder flagged the reference channel 26.7 h before the OD channel failed.','Digital Twin','Measurement'],
+ ['US$371.78','In-line photometer parts (Pro); the Slim is US$235.29, against about US$470 for a benchtop that cannot sit in the loop.','Hardware','Hardware'],
+
+ ['14×','DNPH induction ratio at 13 h, 0.1249 against 0.0089 mM α-KB. It reverses at 16 h, and every arm is n = 2.','Results','Light',1],
+ ['0.279–0.317','h⁻¹ across six light arms, all within one standard error. The trigger itself is cheap.','Results','Light'],
+ ['2.6–3.2','µg/mL ELISA at every short-term time point under both colours. Flat. The activity assay is the one that moves.','Results','Light',1],
+ ['0.081 vs 0.082','A588 with and without AmilCP. It never coloured anything — so we stopped building a proxy and measured the protectants directly.','Engineering','Protein',1],
+ ['1.45×','Wild-type ACCD over the codon-optimised arm, per OD600. It went the wrong way, and the comparison is confounded by signal peptide.','Results','Protein',1],
+ ['35–48 kDa','Reactor blot, consistent with the ~41 kDa enzyme. The LPA blots put the band near 75–100 — that gel set is wrong, and the reactor set is the one we quote.','Results','Protein',1],
+
+ ['74.95 → 1.36','mm root length across 0 → 150 mM NaCl. Quote the means, never the ratio — its denominator has an 80% CV.','Plants','Plants'],
+ ['8.7×','Trehalose rescue — a reference compound, not ours. It shows the assay can see a rescue at all.','Plants','Plants'],
+ ['+70 %','Chlorophyll, ACCD pre-treatment. One plate per condition, so not a validated rescue.','Plants','Plants',1],
+ ['1/40','BoPep4 working dilution, hydroponic — obtained while the host culture alone was stressing the plants.','Plants','Plants',1],
+ ['n = 1','Nine seedlings on one plate are pseudoreplicates. The salt ladder stands on a monotonic trend, not on p < 0.0001.','Plants','Plants',1],
+
+ ['37.6 kU/ha','Model dose, 81 L per hectare, US$3,800 capital. Entrepreneurship uses 203 U/ha and US$2,280, and the pages name each other.','Model','Model',1],
+ ['32 %','Less error than the trend on the stress index; the forecast beats persistence by 41% at two hours.','Model','Model'],
+ ['226 ha','Break-even against US$627,000 of fixed cost, Years 0–4. Peak cash low point −US$196,000 in Year 1.','Entrepreneurship','Model'],
+ ['68 vs 4.9','Years of payback at efficacy 1 — our model against the geospatial analysis. A factor of fourteen we name and do not resolve.','Model','Model',1],
+ ['30 days','Biostimulant route against three to five years for a biopesticide. Chosen on purpose.','Laws','Model'],
+
+ ['31','Voices over seven months; five core experts in continuous loops; a public forum over 50 people.','Human Practices','People'],
+ ['0.2 µm','Pore against cells 0.25–1.0 µm. No shell-side colonies in the platings we ran.','Safety','People'],
+ ['4 of 4','Contain criteria met. Produce 5 of 6, Protect 3 of 4 — scored, stage by stage.','Development','People'],
+ ['35','Registry entries in five interchangeable modules; one Level 2 device, 7 Level 1 sequence-confirmed.','Parts','People'],
+ ['99.2 %','Of farms are under two hectares, working 85.3% of the farmland. Warming 0.29 °C per decade since 1991.','Home','People']
+];
+
+(function(){
+  var areas=['All'];RES.forEach(function(r){if(areas.indexOf(r[3])<0)areas.push(r[3])});
+  var cur='All';
+  $('rfilters').innerHTML=areas.map(function(a){return '<button type="button">'+a+'</button>'}).join('');
+  function paint(){
+    [].forEach.call($('rfilters').children,function(b){b.classList.toggle('on',b.textContent===cur)});
+    $('rgrid').innerHTML=RES.filter(function(r){return cur==='All'||r[3]===cur}).map(function(r){
+      return '<div class="rc'+(r[4]?' soft':'')+'"><div class="n">'+r[0]+'</div><div class="d">'+r[1]+
+      '</div><div class="w"><em>'+r[3]+'</em>'+r[2]+'</div></div>'
+    }).join('')
+  }
+  $('rfilters').onclick=function(e){if(e.target.tagName==='BUTTON'){cur=e.target.textContent;paint()}};
+  paint();
+})();
+
+/* ---------------- contradiction register ---------------- */
+var CX=[
+ ['Plants says “clearest rescue”, Results says no protectant has rescued a plant.','Deliberate, and say so: <b>Plants reports what we saw, Results applies the bar for a claim.</b>'],
+ ['The Results header reads “Green light switches ACCD on”.','That header breaks our own rule. <b>Correct it on the spot</b> to: green raises activity, red does not switch it off, n = 2.'],
+ ['The kill switch is dead on Safety and alive on Entrepreneurship.','<b>Present tense is wrong; the future plan is fine.</b> Membrane is the containment today, genetic containment is 2027.'],
+ ['“No colonies” on Safety against “leaked” in Human Practices.','Both true of different tests. <b>One 24 h plate is not a containment case</b>, and the leak was a valve, not the membrane.'],
+ ['Capital is US$2,280 on one page and US$3,800 on another.','The pages name each other. <b>Break-even at 226 ha has not been rebuilt on the higher figure</b> — say that before they ask.'],
+ ['The bioreactor page gives 0.037 mU/mL where Results gives ~30 nmol mL⁻¹ h⁻¹.','A unit error about 1000× off. <b>Results is the authority</b>, and the page’s own specific activity only works with the larger value.'],
+ ['Wavelengths read 520/660, ~535/~670 and 525/630 across three pages.','Quote the hardware: <b>our red plate emits at 640 nm and CcaSR needs about 672</b>. That gap is the story, not the typo.'],
+ ['Biomanufacturing’s abstract says the permeate concentration “remains to be established”.','Stale. <b>The permeate is quantified</b> — nine-point ELISA and DNPH courses on Results and Development. Only the light dependence is open.'],
+ ['Run numbering: runs 4–7, integrated prototypes 1–4, cycles 5–8.','Three vocabularies for the same hardware. <b>Describe the run, do not name it</b> — and never attribute the ELISA series to a date at the booth.'],
+ ['/inclusivity and /attribution are near-empty pages.','Volunteer it. <b>Judges clicking the Engagement menu will find them</b>, and the Village session asks about collaboration.']
+];
+$('cx').innerHTML='<div class="label" style="margin:26px 0 -2px">Name it before they find it</div>'+CX.map(function(c){
+  return '<div class="cxi"><div class="a">'+c[0]+'</div><div class="b">'+c[1]+'</div></div>'
+}).join('');
+
+/* ---------------- name randomizer ---------------- */
+var POOLS=[
+ {id:'students',name:'Students',role:'',on:1,
+  n:['Abby Kao','Abby Tsai','Abigail Lin','Alex Li','Anna Chuang','Anton Lin','Audrey Chu','Audrey Hsieh',
+     'Chloe Wu','Ethan Chang','Ethan Liu','Eva Zhong','Felix Yu','Jacquelyn Inocencio','Joshua Hong','Mia Guo',
+     'Naomi Lin','Noah Tau','Olivia Du','Olivia Lin','Phoebe Chen','Renee Kuo','Ryan Wei','Ryan Yuan',
+     'Sara Chen','Sarah Chou','Sophia Lin','Sophia Yeh','Sophie Chen','Sophie Huang','Sophie Liu']},
+ {id:'advisors',name:'Student Advisors',role:'Student Advisor',on:0,
+  n:['Dylan Huang','Hachi Wu','Neo Su','Venus Tay']},
+ {id:'instructors',name:'Instructors',role:'Instructor',on:0,
+  n:['Chars Hsieh','Dr. Pak','Gabriel Ng','Gina Yu','Jessie Lau','Timmy']}
+];
+
+var KEY='releaf-booth-draw-v1';
+var st={on:{},off:{},add:{},used:[],noRep:1};
+POOLS.forEach(function(p){st.on[p.id]=p.on;st.add[p.id]=[]});
+try{var raw=localStorage.getItem(KEY);if(raw){var s=JSON.parse(raw);
+  if(s.on)for(var k in s.on)if(k in st.on)st.on[k]=s.on[k];
+  if(s.add)for(var k2 in s.add)if(k2 in st.add)st.add[k2]=s.add[k2]||[];
+  if(s.off)st.off=s.off; if('noRep' in s)st.noRep=s.noRep}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({on:st.on,add:st.add,off:st.off,noRep:st.noRep}))}catch(e){}}
+
+function allOf(p){return p.n.concat(st.add[p.id]||[])}
+function pool(){
+  var out=[];
+  POOLS.forEach(function(p){
+    if(!st.on[p.id])return;
+    allOf(p).forEach(function(n){if(!st.off[n])out.push({n:n,r:p.role})})
+  });
+  return out
+}
+
+function paintPools(){
+  var h='';
+  POOLS.forEach(function(p){
+    var names=allOf(p),live=names.filter(function(n){return !st.off[n]}).length;
+    h+='<div class="pool"><div class="ph"><span class="nm">'+p.name+'<i class="tw">'+live+' / '+names.length+'</i></span>'+
+       '<button class="sw'+(st.on[p.id]?' on':'')+'" type="button" data-pool="'+p.id+'" aria-label="Toggle '+p.name+'"></button></div>'+
+       '<div class="names">'+names.map(function(n){
+         return '<button class="nchip'+(st.off[n]?' off':'')+((st.add[p.id]||[]).indexOf(n)>-1?' mine':'')+
+         (st.used.indexOf(n)>-1?' used':'')+'" type="button" data-name="'+n.replace(/"/g,'&quot;')+'">'+n+'</button>'
+       }).join('')+'</div></div>'
+  });
+  $('pools').innerHTML=h;
+  $('noRep').classList.toggle('on',!!st.noRep);
+  paintMeta();
+}
+$('pools').onclick=function(e){
+  var sw=e.target.closest('.sw'),ch=e.target.closest('.nchip');
+  if(sw){var id=sw.dataset.pool;st.on[id]=st.on[id]?0:1;save();paintPools();return}
+  if(ch){var n=ch.dataset.name;if(st.off[n])delete st.off[n];else st.off[n]=1;save();paintPools()}
+};
+$('noRep').onclick=function(){st.noRep=st.noRep?0:1;save();paintPools()};
+
+$('addPool').innerHTML=POOLS.map(function(p){return '<option value="'+p.id+'">'+p.name+'</option>'}).join('');
+$('addPool').value='instructors';
+function addName(){
+  var v=$('addName').value.trim(),id=$('addPool').value;
+  if(!v)return;
+  var dup=POOLS.some(function(p){return allOf(p).some(function(n){return n.toLowerCase()===v.toLowerCase()})});
+  if(dup){$('addName').value='';return}
+  st.add[id].push(v);st.on[id]=1;save();$('addName').value='';paintPools()
+}
+$('addBtn').onclick=addName;
+$('addName').onkeydown=function(e){if(e.key==='Enter')addName()};
+$('resetAll').onclick=function(){
+  st.off={};st.used=[];POOLS.forEach(function(p){st.add[p.id]=[];st.on[p.id]=p.on});st.noRep=1;
+  save();paintPools();$('dname').textContent='Tap draw';$('drole').textContent='';$('dmulti').innerHTML=''
+};
+
+function paintMeta(){
+  var p=pool(),left=st.noRep?p.filter(function(x){return st.used.indexOf(x.n)<0}).length:p.length;
+  $('dmeta').innerHTML=st.noRep
+    ? p.length+' in the hat · <b class="tw">'+left+'</b> still to speak'+(st.used.length?' · <span style="text-decoration:underline;cursor:pointer" id="rs">reset turns</span>':'')
+    : p.length+' in the hat · repeats allowed';
+  var rs=$('rs');if(rs)rs.onclick=function(){st.used=[];paintPools()};
+  var none=p.length===0;['d1','d2','d3'].forEach(function(i){$(i).disabled=none})
+}
+
+function pick(k){
+  var p=pool();if(!p.length)return;
+  var avail=st.noRep?p.filter(function(x){return st.used.indexOf(x.n)<0}):p.slice();
+  if(st.noRep&&avail.length<k){st.used=[];avail=p.slice()}
+  var out=[];
+  for(var i=0;i<k&&avail.length;i++){
+    var j=Math.floor(Math.random()*avail.length);
+    out.push(avail[j]);avail.splice(j,1)
+  }
+  if(st.noRep)out.forEach(function(o){st.used.push(o.n)});
+  return out
+}
+
+var spinning=false;
+function run(k){
+  if(spinning)return;var res=pick(k);if(!res||!res.length)return;
+  spinning=true;
+  var p=pool(),t=0,iv=setInterval(function(){
+    var r=p[Math.floor(Math.random()*p.length)];
+    $('dname').textContent=k===1?r.n:'…';
+    $('dmulti').innerHTML=k===1?'':res.map(function(){return '<span>'+p[Math.floor(Math.random()*p.length)].n+'</span>'}).join('');
+    $('drole').textContent=k===1?r.r:'';
+    if(++t>11){
+      clearInterval(iv);spinning=false;
+      $('dname').classList.remove('spin');
+      if(k===1){$('dname').textContent=res[0].n;$('drole').textContent=res[0].r;$('dmulti').innerHTML=''}
+      else{$('dname').textContent='';$('drole').textContent=k+' up';
+        $('dmulti').innerHTML=res.map(function(r2){return '<span>'+r2.n+'</span>'}).join('')}
+      paintPools()
+    }
+  },55);
+  $('dname').classList.add('spin')
+}
+$('d1').onclick=function(){run(1)};
+$('d2').onclick=function(){run(2)};
+$('d3').onclick=function(){run(3)};
+paintPools();
+</script>
+</body>
+</html>
