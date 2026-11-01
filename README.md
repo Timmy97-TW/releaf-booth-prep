@@ -12,12 +12,9 @@ language as the [Paris dashboard](https://timmy97-tw.github.io/releaf-jamboree/)
 
 | Section | What it does |
 | --- | --- |
-| **Open** | The 15-second open, word for word, broken into its four beats |
-| **Playground** | Pick who is asking — eight audiences, each with what to lead with, what to have ready, and phrases you tick off as you land them |
-| **Phrases** | The words to hit, in six groups. Tap for the sentence each belongs in; drill mode hides the phrases so you say them before you reveal them |
-| **Results** | 37 numbers with where to point. Amber cards are the ones that cut against us — volunteer those |
-| **Guard rails** | Do-not-claim list, the three pocket sentences, and the contradiction register: name it before a judge finds it |
 | **Who answers** | Name randomizer for rehearsal and for the floor |
+| **Everyone's pitch** | All 20 scripts from the team's [pitch doc](https://docs.google.com/document/d/1DX1fNK8tTVr0ZvPVkddWckGXLdTQNUaYQbmf-ut_m78/edit?tab=t.1bizq2cu3t6h), word for word (snapshot of 1 Nov), with notes in the margin: good lines, wording to trim, claims to check, and Timmy's own doc comments. Six lessons across the room, an at-a-glance table and keyword highlights by topic |
+| **The merged pitch** | One ~3-minute pitch built from the best lines, each line credited to the scripts it came from, plus a five-sentence short cut |
 
 ## The randomizer
 
@@ -34,18 +31,22 @@ Three pools: **Students** (31, on by default), **Student Advisors** (4) and
 
 ## Where the content comes from
 
-Every phrase and number traces to a live wiki page or to the team's judging prep
-record. The honesty rule the prep runs on is kept here too: no claim of a working
-light switch, no validated field effect, no titre, and no price the pages agree on.
+The pitches are the students' own text. The margin notes check each claim against
+the wiki and the team's judging prep: no claim of a working light switch (green
+raised activity at one time point, n = 2), no validated plant rescue, and plating
+results described as what they are, not as a 72-hour containment case.
 
 ## Editing
 
 Everything is in the script arrays near the bottom of `index.html`:
 
-- `WHO` — the playground audiences
-- `PHRASES` — the phrase groups
-- `RES` — the results board (`[number, what it is, where, area, cuts-against-us]`)
-- `CX` — the contradiction register
+- `PITCH` — each script: paragraphs `p`, verdict `v`, steal line `st`, fix `fx`,
+  and margin notes `m` as `[exact quote, type, comment]` (type `g` good, `a` trim,
+  `r` check, `d` Timmy's doc comment). A note attaches to the first paragraph
+  containing its quote.
+- `LESSONS` — the cross-pitch lessons
+- `FULL`, `SHORT` — the merged pitch, each line `[text, [source scripts]]`
+- `KW` — keyword groups and their patterns
 - `POOLS` — the randomizer roster
 
 Commit to `main`; GitHub Pages serves it from the repository root.
