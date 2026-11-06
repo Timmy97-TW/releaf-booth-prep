@@ -754,8 +754,8 @@ function paintMissing(){
   PITCH.forEach(function(P){have[P.f]=1;if(words(P.p)<60)started.push(P.f)});
   var miss=POOLS[0].n.filter(function(n){return !have[n]});
   var un=PITCH.filter(function(P){return P.un});
-  var days=Math.ceil((new Date(2026,10,10,23,30)-new Date())/864e5);
-  var when=days>1?days+' days before the plane':(days===1?'one day before the plane':'and we are already travelling');
+  var days=Math.floor((new Date(2026,10,10,23,30)-new Date())/864e5);
+  var when=days>1?days+' days before the plane':(days===1?'one day before the plane':(days===0?'and the plane leaves tonight':'and we are already travelling'));
   $('missing').innerHTML='<div><h3>Still to write their pitch</h3><p>Students on the team page with no tab in the pitch doc yet'+(started.length?', and anyone who has only started':'')+'.</p><div class="who-chips">'+
     miss.map(function(n){return '<span>'+esc(n)+'</span>'}).join('')+started.map(function(n){return '<span class="st">'+esc(n)+' · started</span>'}).join('')+
     '</div>'+(un.length?'<p class="unsig">'+(un.length===1?'One draft in the doc carries':un.length+' drafts in the doc carry')+' no name: '+un.map(function(P){return esc(P.ud||P.f)}).join(', and ')+'. If one of them is yours, sign it \u2014 two of the names above may already have written their pitch.</p>':'')+
