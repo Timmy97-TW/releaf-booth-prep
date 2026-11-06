@@ -12,9 +12,9 @@ language as the [Paris dashboard](https://timmy97-tw.github.io/releaf-jamboree/)
 
 | Section | What it does |
 | --- | --- |
-| **Everyone's pitch** | All 25 drafts from the team's [pitch doc](https://docs.google.com/document/d/1DX1fNK8tTVr0ZvPVkddWckGXLdTQNUaYQbmf-ut_m78/edit?tab=t.1bizq2cu3t6h), word for word (snapshot of the 4 Nov night update), with notes in the margin: good lines, wording to trim, claims to check, and Timmy's own doc comments. Who still has no pitch (computed from the roster), an alphabetical at-a-glance table and keyword highlights by topic |
+| **Everyone's pitch** | All 25 drafts from the team's [pitch doc](https://docs.google.com/document/d/1DX1fNK8tTVr0ZvPVkddWckGXLdTQNUaYQbmf-ut_m78/edit?tab=t.1bizq2cu3t6h), word for word (snapshot of the pitch doc on the evening of 6 Nov), with notes in the margin: good lines, wording to trim, claims to check, and Timmy's own doc comments. Who still has no pitch (computed from the roster, with a nudge under the names), an alphabetical at-a-glance table and keyword highlights by topic |
 | **The merged pitch** | One ~3-minute pitch built from the best lines, each line credited to the scripts it came from, plus a five-sentence short cut |
-| **Flag it or say it** | A quiz on 119 real lines from the margins: say it at the booth, or flag it for checking. Score, streak, and a best streak kept on the device |
+| **Flag it or say it** | A quiz on 138 real lines from the margins: say it at the booth, or flag it for checking. Score, streak, and a best streak kept on the device |
 | **Who answers** | Name randomizer for rehearsal and for the floor |
 
 ## The randomizer
